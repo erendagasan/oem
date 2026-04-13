@@ -360,6 +360,60 @@ export const pilotMetrics = [
   { label: "Döngü başı tasarruf", value: "%27" },
 ];
 
+export const barcodeScans = [
+  { id: "B-001", timestamp: "10:42:15", partCode: "6205-2Z/C3", name: "Sabit Bilyalı Rulman", oem: "SKF", savingsAmount: 15600, savingsPct: 0.351, status: "Eşleşti" },
+  { id: "B-002", timestamp: "10:38:22", partCode: "IME18-08BPSZC0K", name: "Endüktif Yaklaşım Sensörü", oem: "SICK", savingsAmount: 11475, savingsPct: 0.321, status: "Eşleşti" },
+  { id: "B-003", timestamp: "10:15:05", partCode: "10C-Microglass", name: "Hidrolik Filtre Elemanı", oem: "Parker Hannifin", savingsAmount: 18400, savingsPct: 0.338, status: "Eşleşti" },
+  { id: "B-004", timestamp: "09:55:30", partCode: "Bilinmeyen Parça", name: "Tanımsız", oem: "-", savingsAmount: 0, savingsPct: 0, status: "OEM Bulunamadı" },
+  { id: "B-005", timestamp: "09:41:12", partCode: "LC1D09M7", name: "TeSys D Kontaktör", oem: "Schneider Electric", savingsAmount: 26350, savingsPct: 0.304, status: "Eşleşti" },
+];
+
+export const rfidEvents = [
+  {
+    id: "TR-901",
+    plate: "34 ABC 123",
+    type: "Giriş",
+    timestamp: "Bugün, 11:20",
+    supplier: "Doğu Marmara Rulman A.Ş.",
+    payload: [
+      { partCode: "6205-2Z/C3", name: "Sabit Bilyalı Rulman", quantity: 1200 },
+      { partCode: "HSR25A1SS", name: "Lineer Kızak Arabası", quantity: 240 }
+    ]
+  },
+  {
+    id: "TR-902",
+    plate: "41 XYZ 789",
+    type: "Giriş",
+    timestamp: "Bugün, 09:15",
+    supplier: "Ege Elektrik Toptan",
+    payload: [
+      { partCode: "6SL3210-5BB17", name: "SINAMICS V20 Sürücü", quantity: 50 },
+      { partCode: "LC1D09M7", name: "TeSys D Kontaktör", quantity: 1500 }
+    ]
+  },
+  {
+    id: "TR-903",
+    plate: "35 DEF 456",
+    type: "Çıkış",
+    timestamp: "Dün, 16:40",
+    supplier: "Tesis İçi Transfer (Gebze -> Manisa)",
+    payload: [
+      { partCode: "VUVS-L25-M52", name: "Solenoid Valf", quantity: 80 }
+    ]
+  },
+  {
+    id: "TR-904",
+    plate: "34 KL 890",
+    type: "Giriş",
+    timestamp: "Dün, 14:10",
+    supplier: "İleri Otomasyon A.Ş.",
+    payload: [
+      { partCode: "1756-EN2T", name: "EtherNet/IP Modülü", quantity: 45 },
+      { partCode: "ACS380-040S", name: "Makine Sürücüsü", quantity: 110 }
+    ]
+  }
+];
+
 export type Opportunity = PartRecord & {
   currentTotal: number;
   oemTotal: number;

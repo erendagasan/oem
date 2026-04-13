@@ -6,20 +6,22 @@ import {
   LayoutDashboard, 
   FileSpreadsheet, 
   CheckSquare, 
-  UploadCloud, 
   Bell,
   LogOut,
   Menu,
   X,
-  Hexagon
+  Hexagon,
+  ScanBarcode,
+  Truck
 } from "lucide-react";
 import DashboardView from "@/components/views/dashboard";
 import AnalysisView from "@/components/views/analysis";
 import DecisionsView from "@/components/views/decisions";
-import UploadView from "@/components/views/upload";
+import { BarcodeView } from "@/components/views/barcode";
+import { RFIDView } from "@/components/views/rfid";
 
 export default function HomePage() {
-  const [activeTab, setActiveTab] = useState<"dashboard" | "analysis" | "decisions" | "upload">("dashboard");
+  const [activeTab, setActiveTab] = useState<"dashboard" | "analysis" | "decisions" | "barcode" | "rfid">("dashboard");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { selectedRole, company, resetDemo } = useDemo();
 
@@ -27,7 +29,8 @@ export default function HomePage() {
     { id: "dashboard", label: "Gösterge Paneli", icon: LayoutDashboard },
     { id: "analysis", label: "OEM Analizi", icon: FileSpreadsheet },
     { id: "decisions", label: "Karar Merkezi", icon: CheckSquare },
-    { id: "upload", label: "Veri Yükleme & Entegrasyon", icon: UploadCloud },
+    { id: "barcode", label: "Barkod Okuyucu", icon: ScanBarcode },
+    { id: "rfid", label: "RFID Tır Geçişi", icon: Truck },
   ] as const;
 
   const renderView = () => {
@@ -35,7 +38,8 @@ export default function HomePage() {
       case "dashboard": return <DashboardView onNavigate={(tab) => setActiveTab(tab as any)} />;
       case "analysis": return <AnalysisView />;
       case "decisions": return <DecisionsView />;
-      case "upload": return <UploadView />;
+      case "barcode": return <BarcodeView />;
+      case "rfid": return <RFIDView />;
       default: return <DashboardView onNavigate={(tab) => setActiveTab(tab as any)} />;
     }
   };
