@@ -1,7 +1,7 @@
 "use client";
 
 import { useDemo } from "@/components/demo-provider";
-import { UploadCloud, Database, ScanLine, Box, ArrowRight, CheckCircle2, AlertCircle } from "lucide-react";
+import { UploadCloud, Database, ScanLine, Box, ArrowRight, CheckCircle2, AlertCircle, Download } from "lucide-react";
 import { useState } from "react";
 
 export default function UploadView() {
@@ -39,14 +39,24 @@ export default function UploadView() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Manuel Yükleme */}
         <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col h-full">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="p-3 bg-emerald-50 text-emerald-600 rounded-lg">
-              <UploadCloud className="h-6 w-6" />
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center gap-3">
+              <div className="p-3 bg-emerald-50 text-emerald-600 rounded-lg">
+                <UploadCloud className="h-6 w-6" />
+              </div>
+              <div>
+                <h3 className="font-bold text-slate-900">Dosya Yükleme</h3>
+                <p className="text-sm text-slate-500">CSV veya Excel formatında</p>
+              </div>
             </div>
-            <div>
-              <h3 className="font-bold text-slate-900">Dosya Yükleme</h3>
-              <p className="text-sm text-slate-500">CSV veya Excel formatında</p>
-            </div>
+            <a 
+              href="/ERP_HighRunner_Ornek_Veri.csv" 
+              download="ERP_HighRunner_Ornek_Veri.csv"
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-600 text-xs font-bold rounded-lg transition-colors border border-slate-200"
+            >
+              <Download className="h-3.5 w-3.5" />
+              Örnek Veri İndir
+            </a>
           </div>
 
           <div className="border-2 border-dashed border-slate-200 rounded-xl p-8 flex flex-col items-center justify-center flex-1 text-center hover:bg-slate-50 transition-colors cursor-pointer group">
