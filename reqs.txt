@@ -1,0 +1,147 @@
+
+
+OEM HUB – SmartSource
+
+Ürün İnovasyon Proje Dokümanı
+Tüm Evreler: 1. Evre – 4. Evre
+
+Hazırlayanlar: Bersu Sert | Selin Gür | Çağla Aydın | Alperen Eryaman | Fuat Yumuk
+Nisan 2026
+
+
+──────────────────────────────────────────────────────────────────────
+📌 Proje Özeti
+OEM Hub / SmartSource projesi; büyük üretim tesislerinde orijinal ekipman üreticilerini (OEM) bulmakta yaşanan vakit kaybı ve maliyet artışı sorununa karşı geliştirilmiş dijital bir tedarik zeka platformudur. Proje, bir web sitesi veya Power BI tarzı bir dashboard üzerinden ürünün barkodu, etiketi, fotoğrafı veya kodu girildiğinde ilgili OEM bilgilerini ve gerçek fiyatını anında sorgulayarak mevcut satın alma fiyatıyla karşılaştırmalı fiyat analizi sunar.
+İkinci aşamada sistem; barkod okuyucuya entegre edilerek ambardaki ürünler okutulduğunda otomatik veri akışı sağlayacak, RFID sistemiyle tır içindeki ürünleri okuyarak SAP gibi ERP sistemlerine veri aktarabilecek bir yapıya kavuşturulacaktır. Platform; web uygulaması, mobil uygulama veya firmaya özel Power BI dashboard modülleri olarak kurumsal şirketlere modüler biçimde satılabilecektir.
+──────────────────────────────────────────────────────────────────────
+1. EVRE — Problemin Tanımlanması ve Temel Analiz
+1.1 Çözülmesi Hedeflenen Problem
+•	Temel Sorun: Büyük üretim tesislerinde 'high-runner' (yüksek sirkülasyonlu) yedek parçaların, orijinal üreticiler (OEM) yerine aracı makine firmalarından tedarik edilmesi sonucunda oluşan yüksek gizli maliyetler.
+•	Kapsam: İş dünyasında, özellikle dolaylı satın alma (indirect purchasing) operasyonlarında şeffaflık eksikliği ve manuel analiz zorluğu. Şirketlerin ERP sistemlerindeki on binlerce satırlık karmaşık satın alma verisi içinde hangi parçanın kime ait olduğunu Excel gibi araçlarla bulmak imkânsıza yakındır.
+•	Etkilenen Gruplar: Büyük ve orta ölçekli üretim şirketleri, bütçe planlama departmanları, satın alma uzmanları, lojistik ve tedarik zinciri yöneticileri.
+•	Neden Önemli: Aracı firmaların yüksek kâr marjları (markup) nedeniyle milyonlarca lira kayıp yaşanmakta; aracı kullanımı lojistik rotaları uzatarak teslimat sürelerini (lead-time) artırmaktadır. Çözüm; şeffaflık, operasyonel hız ve doğrudan bütçe tasarrufu sağlar.
+1.2 Hedef Kitle Analizi
+Platform B2B (İşletmeden İşletmeye) modeliyle kurumsal şirketlere satılacaktır. Günlük kullanıcı profili aşağıdaki gibidir:
+•	Yaş: 20–70 yaş aralığı.
+•	Meslek: Dolaylı Satın Alma Uzmanı, Lojistik ve Tedarik Zinciri Analisti, Kategori Yöneticisi.
+•	İlgi Alanları: Maliyet optimizasyonu, stratejik tedarik yönetimi, veri analitiği, ERP sistemleri, operasyonel verimlilik.
+•	Gelir Durumu: Kurumsal sanayi devlerinde çalışan orta ve üst düzey beyaz yakalı profesyoneller; müşteri kurumu bazında büyük satın alma bütçesi olan sanayi kuruluşları.
+•	Zorluklar: Binlerce parça kodu arasında aracıları tespit edememek; dağınık veriler nedeniyle doğru tedarikçi kararı almada güçlük; üst yönetime net veri sunamamak.
+•	İhtiyaçlar: Veriyi saniyeler içinde işleyen, satın alma geçmişini görselleştiren ve 'OEM'den alırsan %30 tasarruf edersin' diyen akıllı, hızlı, kullanımı kolay bir karar destek arayüzü.
+1.3 İnovasyon Türünün Belirlenmesi
+•	Yenilikçi: Geleneksel tedarikçi araştırma yöntemlerini veri analitiği ve interaktif dashboard'larla otomatikleştirir.
+•	Uygulanabilir: Ağır fiziksel yatırım gerektirmez; tamamen veri işleme ve yazılım altyapısına dayanır.
+•	Sürdürülebilir: Üretim şirketleri sürekli yedek parça satın aldığından sistem düzenli kullanımla sürekli yeni tasarruf alanları üretir.
+•	Süreç İnovasyonu: Haftalar sürebilen manuel 'tedarikçi bulma ve maliyet analizi' sürecini veriye dayalı, anlık dijital bir sürece dönüştürür.
+•	Hizmet İnovasyonu: Hedef kitleye fiziksel ürün değil; şirketlerin kendi verilerini anlamlandırmasını sağlayan bulut tabanlı SaaS (Hizmet Olarak Yazılım) modeli sunulur.
+──────────────────────────────────────────────────────────────────────
+2. EVRE — Ürün/Hizmet Tanımı ve İş Modeli
+2.1 Temel İşlevler
+•	Karşıladığı İhtiyaç: Büyük kurumsal firmaların karmaşık ERP (ör. SAP) satın alma verilerini anlamlandırma ve satın alma stratejilerini veriye dayalı optimize etme ihtiyacını karşılar.
+•	Çözdüğü Problem: Yedek parça alımlarında aracı makine üreticilerine ödenen yüksek markup problemini çözer. Sistem parçaların asıl üreticilerini (OEM) tespit ederek doğrudan tedarik kanalı açar.
+2.2 Kullanıcı Tercih Sebepleri ve Avantajları
+•	Zaman: Haftalar süren manuel veri temizliği ve araştırma işlemlerini saniyelere indirir.
+•	Maliyet: Aracı kâr marjı kalktığı için parça başına ortalama %20–%40 net bütçe tasarrufu sağlar.
+•	İşlem Kolaylığı: Hazır, etkileşimli ve anlık sunulabilir kurumsal raporlar üretir.
+•	Ekonomik Fayda: Yıllık dolaylı satın alma bütçesinde milyonlarca lira/euro tasarruf yaratır.
+•	Fonksiyonel Fayda: Doğrudan OEM ile çalışıldığı için teslimat süreleri (lead-time) kısalır, üretim duruş riskleri (downtime) minimize edilir.
+•	Duygusal Fayda: Satın alma uzmanının iş yükü ve stresi azalır; veriye dayalı güvenli kararlar almasını sağlar.
+2.3 Kullanılacak Teknolojiler
+•	Yapı: Tamamen dijital; donanım veya fiziksel makine üretimi içermez.
+•	Backend: Büyük veriyi temizlemek ve OEM çapraz referanslarla eşleştirmek için SQL ve Python algoritmaları.
+•	Frontend: Veriyi etkileşimli grafiklere dönüştürmek için Microsoft Power BI tabanlı kurumsal web arayüzü.
+•	Gelecek Entegrasyonlar: Barkod okuyucu entegrasyonu, RFID sistemi (tır/ambar okuma), SAP/ERP veri aktarımı (2. aşama).
+2.4 Ürün / Hizmet Modeli (Ana Bileşenler)
+•	Backend (Arka Plan): Satın alma verilerini analiz eden ve makine parçalarını OEM kodlarıyla eşleştiren algoritma veri tabanı.
+•	Frontend (Ön Plan): Filtrelenebilir etkileşimli 'Doğru Tedarikçi' web arayüzü ve gösterge paneli (Dashboard).
+•	Platform: Kurumsal firmalara uzaktan erişim imkânı sunan bulut tabanlı SaaS platformu.
+2.5 Kullanıcı Etkileşim Süreci
+•	Kullanıcı, kurumsal hesabıyla web tabanlı platforma giriş yapar (kurulum gerektirmez).
+•	ERP sisteminden aldığı son 1 yıllık 'high-runner' parça listesini platforma yükler.
+•	Sistem veriyi saniyeler içinde işler.
+•	Kullanıcı ekrandaki grafik ve filtreler aracılığıyla hangi parçaların aracıdan alındığını, OEM alternatiflerini ve potansiyel kazancı interaktif olarak inceler.
+•	Onay vererek tedarik rotasını günceller.
+2.6 Geliştirme Süreci
+•	Lojistik/Satın Alma Uzmanları: Tedarik rotaları, iş kuralları ve maliyet hesaplama mantığını kurgular.
+•	Veri Analistleri / Geliştiriciler: Veri tabanı mimarisini (SQL/Python) yazar ve Power BI Dashboard arayüzünü tasarlar.
+•	Aşamalar: Veri modellemesi → OEM eşleştirme algoritması → UI/UX tasarımı → Pilot Test (MVP) → Geri bildirim revizyonu → Canlıya alım.
+2.7 Dağıtım Kanalları
+•	Tamamen dijital; fiziksel mağaza veya kutu ürün satışı yoktur.
+•	B2B satış: Saha satış ekipleri, online demolar ve kurumsal toplantılar.
+•	Opsiyonel: Firmaya özel Power BI Dashboard modülleri olarak modül bazlı satış.
+2.8 Gelir Modeli
+•	Ücretlendirme: Ücretsiz model bulunmamaktadır.
+•	Model 1 – Abonelik (SaaS): Şirketler aylık veya yıllık kurumsal lisans ücreti (Premium Model) öder.
+•	Model 2 – Başarı Odaklı Komisyon: Platformun tespit ettiği ve şirketin OEM'den alarak sağladığı net bütçe tasarrufu üzerinden %X başarı komisyonu alınır.
+2.9 Örnek Senaryo
+Bir satın alma uzmanı sisteme giriş yapar ve 'Rulmanlar ve Sensörler' listesini yükler. Ekranda kırmızı uyarı belirir: 'Dikkat: X Makine firmasından 1.000 Euro'ya aldığınız 500 adet sensörün asıl üreticisi (OEM) Y Teknoloji firmasıdır.' Uzman tıkladığında sistem, doğrudan OEM'den alınması durumunda maliyetin 600 Euro'ya (%40 tasarruf) düşeceğini ve teslimat süresinin 4 gün kısalacağını gösterir. Uzman aynı ekrandan onay vererek tedarik rotasını günceller.
+──────────────────────────────────────────────────────────────────────
+3. EVRE — Prototip Geliştirme, Test ve Revizyon
+3.1 Kullanıcı Deneyimi Testleri ve Geri Bildirim Toplama
+•	Platform hedef kitleyle (dolaylı satın alma uzmanları, lojistik analistler) gerçek kullanım senaryoları üzerinden test edilecektir.
+•	Kullanıcılar sisteme örnek ERP verisi yükleyerek tüm akışı deneyimleyecektir: veri yükleme → OEM eşleştirme → dashboard incelemesi → karar alma.
+•	Toplanacak geri bildirimler: arayüz kullanım kolaylığı, sonuçların anlaşılırlığı, işlem hızı, eksik görülen özellikler, hata ve tutarsızlıklar.
+3.2 İlk Prototip / Demo Üretimi
+•	Dijital ürün olduğundan temel özellikleri içeren interaktif bir Power BI Dashboard demosu hazırlanacaktır.
+•	Demo; örnek bir 'high-runner' parça listesiyle OEM eşleştirmesini, fiyat karşılaştırmasını ve tasarruf hesaplamalarını canlı olarak gösterecektir.
+•	Barkod okuyucu entegrasyonu için düşük maliyetli bir pilot kurulum planlanacaktır (2. aşama hazırlığı).
+3.3 Teknolojik ve İşlevsel Uygunluk
+•	SQL/Python tabanlı backend ve Power BI frontend yapısı sürdürülebilir, ölçeklenebilir ve bakımı kolay teknolojilerdir.
+•	Bulut altyapısı (SaaS) üretim tesislerindeki farklı ERP sistemleriyle entegrasyon açısından teknik olarak uygulanabilirdir.
+•	OEM veri tabanının kapsamı ve güncelleme döngüsü, teknik uygunluğun sürdürülmesi için kritik unsurdur.
+3.4 Kullanıcı Geri Bildirimleri ile Revizyon
+•	Geri bildirimler; kritiklik (hata / iyileştirme / öneri) ve kullanıcı sayısına göre önceliklendirilecektir.
+•	İyileştirilecek başlıca alanlar: dashboard görsel tasarımı, filtre seçenekleri, OEM eşleştirme doğruluğu, raporlama formatları.
+•	Kullanıcı deneyimini artıracak değişiklikler: tek tıkla karşılaştırma, özet tasarruf kartları, dışa aktarma (Excel/PDF) özellikleri.
+3.5 Pazar Testi
+•	Ürün, 1–2 pilot kurumsal firma ile sınırlı kullanıcı grubuna test amaçlı sunulacaktır.
+•	Gerçek müşteri tepkileri ölçülecek: NPS (Net Tavsiye Skoru), kullanım süresi, döngü başına tasarruf edilen tutar.
+•	Rakip analizi ön hazırlığı bu aşamada yapılacak; mevcut manuel yöntemler ve benzer dijital çözümlerle kıyaslama tablosu oluşturulacaktır.
+3.6 Gelir Modelinin Netleştirilmesi
+•	Model: Ücretsiz katman bulunmayacaktır; platform ücretli bir kurumsal araçtır.
+•	Seçenekler: Model 1: Yıllık/aylık abonelik lisansı (SaaS). Model 2: Tespit edilen tasarruf üzerinden başarı komisyonu.
+Tahmini Maliyet ve Gelir Analizi (Ön Öngörü)
+Kalem	Aylık Tahmini (₺)	Yıllık Tahmini (₺)
+GIDERLER		
+Backend geliştirme (SQL/Python)	15.000	180.000
+Frontend / Power BI lisans & geliştirme	8.000	96.000
+Bulut altyapısı (Cloud hosting)	5.000	60.000
+Satış & pazarlama	10.000	120.000
+Toplam Gider	38.000	456.000
+GELIRLER		
+Abonelik geliri (10 firma × 30.000 ₺/ay)	300.000	3.600.000
+Başarı komisyonu (%5 × 200.000 ₺ tasarruf)	10.000	120.000
+Toplam Gelir (Hedef)	310.000	3.720.000
+Net Kâr (Tahmini)	272.000	3.264.000
+3. Evre — Beklenen Çıktılar
+•	Kullanıcı testleri tamamlanmış olacak.
+•	İlk prototip veya demo oluşturulmuş olacak.
+•	Kullanıcı geri bildirimleri doğrultusunda iyileştirmeler yapılacak.
+•	Ürünün/hizmetin uygulanabilirliği test edilmiş olacak.
+•	Gelir modeli ve pazar stratejisi netleştirilecek.
+──────────────────────────────────────────────────────────────────────
+4. EVRE — Nihai Ürün, Pazar Konumlandırma ve Sunum
+4.1 Rakip Analizi ve Pazar Konumlandırma
+•	SmartSource, piyasadaki genel tedarik yönetim araçlarından farklı olarak OEM eşleştirme algoritması ve sektöre özgü veri tabanı ile doğrudan üreticiye ulaşma işlevini otomatikleştirir.
+•	Kullanıcı geri bildirimleri ışığında platform, 'maliyet şeffaflığı' ve 'karar hızı' eksenlerinde konumlanmıştır; rakiplerin sunmadığı anlık ROI (yatırım getirisi) hesaplama öne çıkan farklılaşma noktasıdır.
+Kriter	SmartSource (OEM Hub)	Rakip / Manuel Yöntem	Avantaj / Dezavantaj
+OEM Eşleştirme	Otomatik algoritma	Manuel araştırma	✅ Avantaj
+Hız	Saniyeler	Haftalar	✅ Avantaj
+Görselleştirme	Etkileşimli Dashboard	Excel tabloları	✅ Avantaj
+ERP Entegrasyonu	SAP/ERP uyumlu	Yok	✅ Avantaj
+İlk Kurulum Maliyeti	Orta (SaaS lisans)	Düşük (sıfır)	⚠️ Dezavantaj
+OEM Veri Tabanı Kapsamı	Geliştirme aşamasında	—	⚠️ Risk
+4.2 Nihai Revizyon ve Geliştirme
+•	Kullanıcı geri bildirimlerine göre yapılan değişiklikler dokümante edilecek ve versiyonlama sistemine işlenecektir.
+•	Ürünün teknik ve işlevsel son hali belirlenecek; gerçek fabrika verisiyle doğrulama yapılacaktır.
+•	Nihai Dashboard demosu ve sunum materyalleri görsellerle desteklenecektir.
+4.3 Gelir Modelinin ve Finansal Değerlendirmenin Netleştirilmesi
+•	Abonelik mi, komisyon mu, yoksa hibrit model mi uygulanacağı kesinleştirilecektir.
+•	Pilot firmadan elde edilen gerçek tasarruf verisiyle gelir ve maliyet tahminleri güncellenecektir.
+•	Finansal sürdürülebilirlik: OEM veri tabanı genişletme maliyeti, müşteri başına gelir ve büyüme projeksiyonları değerlendirilecektir.
+4. Evre — Beklenen Çıktılar
+•	Rakip analizi ve pazar konumlandırması netleşecek.
+•	Kullanıcı geri bildirimleri doğrultusunda nihai revizyon yapılacak.
+•	Gelir modeli ve finansal değerlendirme tamamlanacak.
+•	Sunum içerikleri görsellerle desteklenerek hazırlanacak.
+•	Sunumlar gerçekleştirilerek değerlendirme süreci tamamlanacak.
