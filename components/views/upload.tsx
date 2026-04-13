@@ -1,7 +1,7 @@
 "use client";
 
 import { useDemo } from "@/components/demo-provider";
-import { UploadCloud, Database, ScanLine, Box, ArrowRight, CheckCircle2, AlertCircle, Download } from "lucide-react";
+import { UploadCloud, Database, ScanLine, Box, ArrowRight, CheckCircle2, AlertCircle, Download, RadioReceiver } from "lucide-react";
 import { useState } from "react";
 
 export default function UploadView() {
@@ -148,42 +148,46 @@ export default function UploadView() {
         </div>
 
         {/* Donanım Entegrasyonları (Aşama 2) */}
-        <div className="md:col-span-2 bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative overflow-hidden">
-          <div className="absolute top-0 right-0 bg-slate-900 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg tracking-wider uppercase">
-            Aşama 2 Modülü
+        <div className="md:col-span-2 bg-white rounded-xl border border-slate-200 shadow-sm relative overflow-hidden">
+          <div className="absolute top-0 right-0 bg-[#0f172a] text-white text-[10px] font-bold px-3 py-1.5 rounded-bl-lg tracking-[0.1em]">
+            AŞAMA 2 MODÜLÜ
           </div>
           
-          <h3 className="font-bold text-slate-900 mb-6 text-lg">Donanım & Saha Entegrasyonları</h3>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="border border-slate-200 rounded-xl p-4 flex gap-4 items-start bg-slate-50 opacity-75">
-              <div className="p-3 bg-white border border-slate-200 rounded-lg shrink-0">
-                <ScanLine className="h-6 w-6 text-slate-600" />
-              </div>
-              <div>
-                <h4 className="font-bold text-slate-800 text-sm">Barkod Okuyucu</h4>
-                <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                  Ambardaki ürünler okutulduğunda anında OEM eşleştirmesi yapılır ve arayüze aktarılır.
-                </p>
-                <div className="mt-3 flex items-center gap-1 text-xs font-semibold text-slate-400">
-                  <AlertCircle className="h-3 w-3" />
-                  Donanım Bekleniyor
+          <div className="p-6 md:p-8">
+            <h3 className="font-bold text-slate-900 mb-6 text-xl" style={{ fontFamily: "Georgia, serif" }}>Donanım & Saha Entegrasyonları</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Barkod Okuyucu */}
+              <div className="border border-slate-200 rounded-xl p-5 flex gap-4 items-start bg-white shadow-sm hover:shadow transition-shadow">
+                <div className="p-3 bg-white border border-slate-200 rounded-lg shrink-0 shadow-sm">
+                  <ScanLine className="h-6 w-6 text-slate-500" />
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-bold text-slate-700 text-base mb-2">Barkod Okuyucu</h4>
+                  <p className="text-sm text-slate-500 leading-relaxed mb-4">
+                    Ambardaki ürünler okutulduğunda anında OEM eşleştirmesi yapılır ve arayüze aktarılır.
+                  </p>
+                  <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-400">
+                    <AlertCircle className="h-3.5 w-3.5" />
+                    Donanım Bekleniyor
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="border border-slate-200 rounded-xl p-4 flex gap-4 items-start bg-slate-50 opacity-75">
-              <div className="p-3 bg-white border border-slate-200 rounded-lg shrink-0">
-                <Box className="h-6 w-6 text-slate-600" />
-              </div>
-              <div>
-                <h4 className="font-bold text-slate-800 text-sm">RFID Tır / Kapı Geçişi</h4>
-                <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                  Tesise giren paletler RFID üzerinden taranır ve SAP/ERP sistemine doğrudan işlenir.
-                </p>
-                <div className="mt-3 flex items-center gap-1 text-xs font-semibold text-slate-400">
-                  <AlertCircle className="h-3 w-3" />
-                  Altyapı Kurulum Aşamasında
+              {/* RFID */}
+              <div className="border border-slate-200 rounded-xl p-5 flex gap-4 items-start bg-white shadow-sm hover:shadow transition-shadow">
+                <div className="p-3 bg-white border border-slate-200 rounded-lg shrink-0 shadow-sm">
+                  <Box className="h-6 w-6 text-slate-500" />
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-bold text-slate-700 text-base mb-2">RFID Tır / Kapı Geçişi</h4>
+                  <p className="text-sm text-slate-500 leading-relaxed mb-4">
+                    Tesise giren paletler RFID üzerinden taranır ve SAP/ERP sistemine doğrudan işlenir.
+                  </p>
+                  <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-400">
+                    <AlertCircle className="h-3.5 w-3.5" />
+                    Altyapı Kurulum Aşamasında
+                  </div>
                 </div>
               </div>
             </div>
