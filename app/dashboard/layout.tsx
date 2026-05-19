@@ -9,7 +9,6 @@ import {
   LayoutDashboard,
   FileSpreadsheet,
   CheckSquare,
-  Bell,
   LogOut,
   Menu,
   MessageCircleQuestion,
@@ -19,6 +18,7 @@ import {
   Truck,
   Calculator,
   RotateCcw,
+  Building2,
 } from "lucide-react";
 
 const navItems = [
@@ -96,20 +96,13 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
         <div className="p-4 border-t border-slate-200 shrink-0 bg-white">
           <div className="mb-4 px-2">
-            <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Aktif Şirket</p>
-            <p className="text-sm font-bold text-slate-900 truncate">{company}</p>
-          </div>
-
-          <div className="flex items-center gap-3 px-2 mb-4">
-            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center text-white font-bold text-sm shrink-0 shadow-sm">
-              {userInitials}
+            <div className="flex items-center gap-2 mb-2">
+              <div className="h-7 w-7 rounded-lg bg-slate-100 flex items-center justify-center">
+                <Building2 className="h-3.5 w-3.5 text-slate-500" />
+              </div>
+              <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Aktif Firma</p>
             </div>
-            <div className="flex-1 min-w-0">
-              <p className="text-sm font-bold text-slate-900 truncate">{DEMO_CREDENTIALS.fullName}</p>
-              <p className="text-xs font-medium text-slate-500 truncate" title={selectedRole}>
-                {selectedRole}
-              </p>
-            </div>
+            <p className="text-sm font-bold text-slate-900 truncate pl-9">{company}</p>
           </div>
 
           <div className="space-y-2">
@@ -203,14 +196,23 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           <h1 className="text-lg font-bold text-slate-800 tracking-tight">
             {navItems.find((i) => i.id === activeSegment)?.label}
           </h1>
-          <div className="flex items-center gap-4">
-            <button className="relative p-2 text-slate-400 hover:text-slate-600 transition-colors rounded-full hover:bg-slate-100 focus:outline-none">
-              <Bell className="h-5 w-5" />
-              <span className="absolute top-1.5 right-1.5 h-2.5 w-2.5 rounded-full bg-rose-500 border-2 border-white"></span>
-            </button>
-            <div className="h-9 w-9 rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 border border-emerald-400/30 flex items-center justify-center text-white font-bold text-xs shadow-sm">
+          <div className="flex items-center gap-3">
+            <div className="h-9 w-9 rounded-full bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center text-white font-bold text-xs shrink-0 shadow-sm">
               {userInitials}
             </div>
+            <div className="hidden lg:block min-w-0">
+              <p className="text-sm font-bold text-slate-900 truncate leading-tight">{DEMO_CREDENTIALS.fullName}</p>
+              <p className="text-[10px] font-medium text-slate-400 truncate leading-tight">{selectedRole}</p>
+            </div>
+            <button
+              onClick={() => {
+                void handleLogout();
+              }}
+              className="p-2 text-slate-400 hover:text-rose-600 transition-colors rounded-lg hover:bg-slate-50"
+              title="Güvenli Çıkış"
+            >
+              <LogOut className="h-4 w-4" />
+            </button>
           </div>
         </header>
 
