@@ -126,7 +126,7 @@ export default function LandingPage() {
           </Link>
           <div className="flex items-center gap-2 sm:gap-4">
             <Link
-              href="/giris"
+              href="/login"
               className="inline-flex items-center gap-1.5 sm:gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold transition-all shadow-sm shadow-emerald-200 whitespace-nowrap"
             >
               Müşteri Girişi
@@ -166,7 +166,7 @@ export default function LandingPage() {
 
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                href="/giris"
+                href="/login"
                 className="w-full sm:w-auto inline-flex justify-center items-center gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 text-base font-bold transition-all shadow-sm shadow-emerald-200 hover:shadow-md hover:shadow-emerald-200/50"
               >
                 İnteraktif Platformu İnceleyin
@@ -351,7 +351,7 @@ export default function LandingPage() {
 
             <div className="mt-6 text-center">
               <Link
-                href="/giris"
+                href="/login"
                 className="inline-flex items-center gap-2 text-sm font-bold text-emerald-400 hover:text-emerald-300 transition-colors"
               >
                 Tam sürümü panele giriş yaparak deneyimleyin
@@ -612,7 +612,7 @@ export default function LandingPage() {
 
           <div className="p-6 bg-slate-50 border-t border-slate-100 text-center">
             <Link
-              href="/giris"
+              href="/login"
               className="inline-flex items-center gap-2 text-sm font-bold text-emerald-600 hover:text-emerald-500 transition-colors"
             >
               Tam dokümantasyon ve örnek kodlar için panele giriş yapın
@@ -729,7 +729,7 @@ export default function LandingPage() {
             OEMHUB&apos;ın gücünü kendi verilerinizle keşfedin. Panele giriş yaparak anında incelemeye başlayın.
           </p>
           <Link
-            href="/giris"
+            href="/login"
             className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 text-lg font-bold transition-all shadow-sm shadow-emerald-200 hover:shadow-md hover:shadow-emerald-200/50"
           >
             Kurumsal Giriş

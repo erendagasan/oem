@@ -59,7 +59,7 @@ export default function DashboardShell() {
     try {
       await fetch("/api/auth/logout", { method: "POST" });
     } finally {
-      window.location.href = "/giris";
+      window.location.href = "/login";
     }
   };
 
