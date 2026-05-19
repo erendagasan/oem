@@ -139,7 +139,7 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-32 pb-20 lg:pt-40 lg:pb-28 border-b border-slate-200">
+      <section className="relative overflow-hidden pt-28 pb-16 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-28 border-b border-slate-200">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(16,185,129,0.06),transparent_40%),radial-gradient(circle_at_70%_60%,rgba(59,130,246,0.04),transparent_40%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30" />
 
@@ -153,7 +153,7 @@ export default function LandingPage() {
               Kurumsal Tedarik Zekası Platformu
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[1.1] text-slate-900">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[1.1] text-slate-900">
               Tedarik zincirinizdeki{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">
                 gizli maliyetleri
@@ -161,7 +161,7 @@ export default function LandingPage() {
               görünür kılın.
             </h1>
 
-            <p className="mt-6 text-lg md:text-xl text-slate-500 leading-relaxed max-w-3xl mx-auto">
+            <p className="mt-6 text-base sm:text-lg md:text-xl text-slate-500 leading-relaxed max-w-3xl mx-auto">
               OEMHUB, ERP satın alma verilerinizi saniyeler içinde analiz ederek orijinal ekipman
               üreticisi (OEM) alternatiflerini, potansiyel maliyet tasarrufunu ve tedarik süresi
               avantajlarını tek bir merkezden yönetmenizi sağlar.
@@ -205,13 +205,13 @@ export default function LandingPage() {
       </section>
 
       {/* How It Works Section */}
-      <section id="nasil-calisir" className="mx-auto max-w-7xl px-6 py-24">
+      <section id="nasil-calisir" className="mx-auto max-w-7xl px-6 py-16 md:py-24">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 text-emerald-600 mb-4 justify-center">
             <Zap className="h-5 w-5" />
             <p className="text-sm uppercase tracking-wider font-bold">5 Adımda Operasyonel Akış</p>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
             Nasıl Çalışır?
           </h2>
           <p className="text-slate-500 mt-4 text-lg">
@@ -238,6 +238,13 @@ export default function LandingPage() {
                   </div>
                   <h3 className="text-sm font-bold text-slate-900 mb-1.5">{step.title}</h3>
                   <p className="text-xs text-slate-500 leading-relaxed">{step.description}</p>
+                  {index < howItWorksSteps.length - 1 && (
+                    <div className="md:hidden mt-4 text-emerald-300">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19" /><polyline points="19 12 12 19 5 12" />
+                      </svg>
+                    </div>
+                  )}
                 </div>
               );
             })}
@@ -246,14 +253,14 @@ export default function LandingPage() {
       </section>
 
       {/* Dashboard Preview Section */}
-      <section className="mx-auto max-w-7xl px-6 pb-24">
+      <section className="mx-auto max-w-7xl px-6 pb-16 md:pb-24">
         <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-800 to-slate-900 overflow-hidden shadow-lg">
           <div className="px-8 py-10 md:px-10 border-b border-slate-700/50">
             <div className="flex items-center gap-2 text-emerald-400 mb-3">
               <LayoutDashboard className="h-5 w-5" />
               <p className="text-sm uppercase tracking-wider font-bold text-slate-300">Platform Önizleme</p>
             </div>
-            <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight">Dashboard Arayüzü</h3>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight">Dashboard Arayüzü</h3>
             <p className="text-slate-400 mt-3 text-lg max-w-2xl">
               Tüm operasyonel verileri tek ekranda görün. KPI kartları, trend grafikleri ve
               karar merkeziyle anlık aksiyon alın.
@@ -310,8 +317,8 @@ export default function LandingPage() {
                       ))}
                     </div>
                     <div className="flex justify-between mt-3 text-[10px] text-slate-600">
-                      {["May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara", "Oca", "Şub", "Mar", "Nis"].map((m) => (
-                        <span key={m}>{m}</span>
+                      {["May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara", "Oca", "Şub", "Mar", "Nis"].map((m, i) => (
+                        <span key={m} className={i % 2 !== 0 ? "hidden sm:inline" : ""}>{m}</span>
                       ))}
                     </div>
                   </div>
@@ -359,13 +366,13 @@ export default function LandingPage() {
       </section>
 
       {/* Features Section */}
-      <section className="mx-auto max-w-7xl px-6 pb-24">
+      <section className="mx-auto max-w-7xl px-6 pb-16 md:pb-24">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 text-emerald-600 mb-4 justify-center">
             <BadgeCheck className="h-5 w-5" />
             <p className="text-sm uppercase tracking-wider font-bold">Platform Modülleri</p>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
             Kurumsal satın alma için özel olarak tasarlandı
           </h2>
           <p className="text-slate-500 mt-4 text-lg">
@@ -394,7 +401,7 @@ export default function LandingPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="mx-auto max-w-7xl px-6 pb-24">
+      <section className="mx-auto max-w-7xl px-6 pb-16 md:pb-24">
         <div className="rounded-3xl border border-slate-200 bg-white overflow-hidden shadow-sm">
           <div className="px-8 py-10 md:px-10 border-b border-slate-100 text-center md:text-left flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
@@ -402,7 +409,7 @@ export default function LandingPage() {
                 <LineChart className="h-5 w-5" />
                 <p className="text-sm uppercase tracking-wider font-bold">Şeffaf Fiyatlandırma</p>
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
                 İhtiyaca göre ölçeklenen paketler
               </h3>
               <p className="text-slate-500 mt-3 text-lg max-w-2xl">
@@ -448,10 +455,10 @@ export default function LandingPage() {
       </section>
 
       {/* Integration & Roadmap */}
-      <section className="mx-auto max-w-7xl px-6 pb-24">
+      <section className="mx-auto max-w-7xl px-6 pb-16 md:pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Integration */}
-          <div className="rounded-3xl border border-slate-200 bg-white p-8 md:p-10 shadow-sm">
+          <div className="rounded-3xl border border-slate-200 bg-white p-6 md:p-8 lg:p-10 shadow-sm">
             <div className="flex items-center gap-2 text-emerald-600 mb-4">
               <PlugZap className="h-5 w-5" />
               <p className="text-sm uppercase tracking-wider font-bold">Kusursuz Entegrasyon</p>
@@ -478,7 +485,7 @@ export default function LandingPage() {
           </div>
 
           {/* Roadmap */}
-          <div className="rounded-3xl border border-slate-200 bg-white p-8 md:p-10 shadow-sm">
+          <div className="rounded-3xl border border-slate-200 bg-white p-6 md:p-8 lg:p-10 shadow-sm">
             <div className="flex items-center gap-2 text-amber-600 mb-4">
               <Milestone className="h-5 w-5" />
               <p className="text-sm uppercase tracking-wider font-bold">Global Yol Haritası</p>
@@ -563,14 +570,14 @@ export default function LandingPage() {
       </section>
 
       {/* API Portal */}
-      <section className="mx-auto max-w-7xl px-6 pb-24">
+      <section className="mx-auto max-w-7xl px-6 pb-16 md:pb-24">
         <div className="rounded-3xl border border-slate-200 bg-white overflow-hidden shadow-sm">
           <div className="px-8 py-10 md:px-10 border-b border-slate-100">
             <div className="flex items-center gap-2 text-emerald-600 mb-3">
               <Code2 className="h-5 w-5" />
               <p className="text-sm uppercase tracking-wider font-bold">Geliştirici Kaynakları</p>
             </div>
-            <h3 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">API Portalı</h3>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">API Portalı</h3>
             <p className="text-slate-500 mt-3 text-lg max-w-2xl">
               OEMHUB&apos;ı mevcut sistemlerinize entegre edin. REST API uç noktaları,
               örnek kod parçacıkları ve kimlik doğrulama rehberiyle hızlı başlangıç yapın.
@@ -619,7 +626,7 @@ export default function LandingPage() {
       </section>
 
       {/* Knowledge Base */}
-      <section className="mx-auto max-w-7xl px-6 pb-24">
+      <section className="mx-auto max-w-7xl px-6 pb-16 md:pb-24">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 text-emerald-600 mb-4 justify-center">
             <BookOpen className="h-5 w-5" />
@@ -665,14 +672,14 @@ export default function LandingPage() {
       </section>
 
       {/* Competitor Analysis */}
-      <section className="mx-auto max-w-7xl px-6 pb-24">
+      <section className="mx-auto max-w-7xl px-6 pb-16 md:pb-24">
         <div className="rounded-3xl border border-slate-200 bg-white overflow-hidden shadow-sm">
           <div className="px-8 py-10 md:px-10 border-b border-slate-100">
             <div className="flex items-center gap-2 text-emerald-600 mb-3">
               <Scale className="h-5 w-5" />
               <p className="text-sm uppercase tracking-wider font-bold">Pazar Karşılaştırması</p>
             </div>
-            <h3 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Neden OEMHUB?</h3>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Neden OEMHUB?</h3>
             <p className="text-slate-500 mt-3 text-lg max-w-2xl">
               Geleneksel manuel tedarik süreçlerine kıyasla OEMHUB&apos;ın sunduğu
               rekabet avantajlarını objektif kriterlerle karşılaştırın.
@@ -717,8 +724,8 @@ export default function LandingPage() {
       {/* CTA Section */}
       <section className="relative overflow-hidden border-t border-slate-200 bg-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(16,185,129,0.05),transparent_60%)]" />
-        <div className="relative mx-auto max-w-5xl px-6 py-24 text-center">
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-6">
+        <div className="relative mx-auto max-w-5xl px-6 py-16 md:py-24 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-6">
             Tedarik süreçlerinizi dönüştürmeye hazır mısınız?
           </h2>
           <p className="text-xl text-slate-500 mb-10 max-w-2xl mx-auto">
