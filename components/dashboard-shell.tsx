@@ -9,6 +9,7 @@ import {
   Bell,
   LogOut,
   Menu,
+  MessageCircleQuestion,
   X,
   Hexagon,
   ScanBarcode,
@@ -22,6 +23,7 @@ import DecisionsView from "@/components/views/decisions";
 import { BarcodeView } from "@/components/views/barcode";
 import { RFIDView } from "@/components/views/rfid";
 import RoiCalculatorView from "@/components/views/roi-pricing";
+import SupportCenterView from "@/components/views/support-center";
 
 type MainTab =
   | "dashboard"
@@ -29,7 +31,8 @@ type MainTab =
   | "decisions"
   | "barcode"
   | "rfid"
-  | "roi";
+  | "roi"
+  | "support";
 
 export default function DashboardShell() {
   const [activeTab, setActiveTab] = useState<MainTab>("dashboard");
@@ -43,6 +46,7 @@ export default function DashboardShell() {
     { id: "barcode", label: "Barkod Okuyucu", icon: ScanBarcode },
     { id: "rfid", label: "RFID Tır Geçişi", icon: Truck },
     { id: "roi", label: "ROI Hesaplayıcı", icon: Calculator },
+    { id: "support", label: "Canlı Destek & SSS", icon: MessageCircleQuestion },
   ] as const;
 
   const handleNavigate = (tab: string) => {
@@ -73,6 +77,8 @@ export default function DashboardShell() {
         return <RFIDView />;
       case "roi":
         return <RoiCalculatorView />;
+      case "support":
+        return <SupportCenterView />;
       default:
         return <DashboardView onNavigate={handleNavigate} />;
     }
