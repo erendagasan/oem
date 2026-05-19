@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { barcodeScans, formatCurrency, formatPercent } from "@/lib/smartsource-data";
-import { ScanBarcode, CheckCircle2, AlertCircle, BarChart3, TrendingUp, Package, Calendar } from "lucide-react";
+import { ScanBarcode, CheckCircle2, AlertCircle, BarChart3, Package, Calendar } from "lucide-react";
 
 type FilterKey = "today" | "last_7_days" | "last_30_days";
 

@@ -14,7 +14,7 @@ const body = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "SmartSource OEM HUB Demo",
+  title: "OEMHUB Demo",
   description: "OEM eşleştirme ve maliyet analizini gösteren adım adım demo web uygulaması.",
 };
 

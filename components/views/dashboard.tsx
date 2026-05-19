@@ -12,13 +12,12 @@ import {
   CheckSquare,
   BarChart3,
   Package,
-  Activity,
   Target,
   Zap
 } from "lucide-react";
 
 export default function DashboardView({ onNavigate }: { onNavigate: (tab: string) => void }) {
-  const { stats, filteredOpportunities, approvedIds, approvalRate } = useDemo();
+  const { stats, filteredOpportunities, approvedIds } = useDemo();
 
   const topAlerts = filteredOpportunities
     .filter((item) => item.savingsPct >= 0.25)

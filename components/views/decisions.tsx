@@ -12,7 +12,6 @@ export default function DecisionsView() {
     toggleApproval,
     feedbackList,
     addFeedback,
-    selectedRole,
   } = useDemo();
 
   const [feedbackText, setFeedbackText] = useState("");
