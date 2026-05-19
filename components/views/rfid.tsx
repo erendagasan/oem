@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { rfidEvents } from "@/lib/smartsource-data";
 import { Truck, ArrowRight, PackageOpen, LayoutDashboard, Calendar, Users, BarChart } from "lucide-react";

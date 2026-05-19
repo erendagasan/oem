@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { barcodeScans, formatCurrency, formatPercent } from "@/lib/smartsource-data";
 import { ScanBarcode, CheckCircle2, AlertCircle, BarChart3, Package, Calendar } from "lucide-react";
