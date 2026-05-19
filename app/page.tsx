@@ -412,15 +412,15 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto overflow-y-visible pt-0.5">
             <table className="w-full min-w-[1000px] text-left border-collapse">
               <thead>
                 <tr className="bg-slate-50">
                   <th className="px-8 py-5 text-slate-500 font-semibold border-b border-slate-100 w-1/5">Özellik / Paket</th>
                   {packagePlans.map((plan) => (
-                    <th key={plan.id} className="px-6 py-5 border-b border-slate-100 relative">
+                    <th key={plan.id} className="px-6 pt-7 pb-4 border-b border-slate-100 relative">
                       {plan.id === "pro" && (
-                        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-widest py-1 px-3 rounded-full whitespace-nowrap">
+                        <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-widest py-1 px-3 rounded-b-full whitespace-nowrap">
                           En Çok Tercih Edilen
                         </div>
                       )}
