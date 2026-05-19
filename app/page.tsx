@@ -115,22 +115,22 @@ export default function LandingPage() {
     <main className="bg-slate-50 text-slate-900 min-h-screen font-sans">
       {/* Navigation */}
       <nav className="fixed top-0 inset-x-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur-md">
-        <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 h-16 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 shrink-0">
             <div className="bg-gradient-to-br from-emerald-500 to-teal-700 p-1.5 rounded-lg shadow-sm shadow-emerald-200">
-              <Hexagon className="h-5 w-5 text-white" fill="currentColor" strokeWidth={1} />
+              <Hexagon className="h-4 w-4 sm:h-5 sm:w-5 text-white" fill="currentColor" strokeWidth={1} />
             </div>
-            <span className="text-xl font-black tracking-tight text-slate-800">
+            <span className="text-lg sm:text-xl font-black tracking-tight text-slate-800">
               OEM<span className="text-emerald-600">HUB</span>
             </span>
-          </div>
-          <div className="flex items-center gap-4">
-            <Link href="/giris" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+          </Link>
+          <div className="flex items-center gap-2 sm:gap-4">
+            <Link href="/giris" className="hidden sm:inline text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
               Müşteri Girişi
             </Link>
             <Link
               href="/giris"
-              className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 text-sm font-bold transition-all shadow-sm shadow-emerald-200"
+              className="inline-flex items-center gap-1.5 sm:gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold transition-all shadow-sm shadow-emerald-200 whitespace-nowrap"
             >
               Demoyu Başlat
             </Link>
