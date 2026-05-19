@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useDemo } from "@/components/demo-provider";
+import { DEMO_CREDENTIALS } from "@/lib/auth";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import {
@@ -36,6 +37,14 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   const { selectedRole, company, resetDemo } = useDemo();
 
   const activeSegment = pathname.replace("/dashboard", "").replace(/^\/|\/$/g, "") || "";
+
+  const userInitials = useMemo(() => {
+    return DEMO_CREDENTIALS.fullName
+      .split(" ")
+      .map((n) => n[0])
+      .join("")
+      .toUpperCase();
+  }, []);
 
   const handleLogout = async () => {
     try {
@@ -92,11 +101,11 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           </div>
 
           <div className="flex items-center gap-3 px-2 mb-4">
-            <div className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center text-white font-bold shrink-0">
-              N
+            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center text-white font-bold text-sm shrink-0 shadow-sm">
+              {userInitials}
             </div>
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-bold text-slate-900 truncate">Nedim K.</p>
+              <p className="text-sm font-bold text-slate-900 truncate">{DEMO_CREDENTIALS.fullName}</p>
               <p className="text-xs font-medium text-slate-500 truncate" title={selectedRole}>
                 {selectedRole}
               </p>
@@ -199,8 +208,8 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
               <Bell className="h-5 w-5" />
               <span className="absolute top-1.5 right-1.5 h-2.5 w-2.5 rounded-full bg-rose-500 border-2 border-white"></span>
             </button>
-            <div className="h-9 w-9 rounded-full bg-gradient-to-br from-emerald-100 to-emerald-200 border border-emerald-300 flex items-center justify-center text-emerald-800 font-bold text-sm shadow-sm">
-              AU
+            <div className="h-9 w-9 rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 border border-emerald-400/30 flex items-center justify-center text-white font-bold text-xs shadow-sm">
+              {userInitials}
             </div>
           </div>
         </header>
