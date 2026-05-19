@@ -169,7 +169,7 @@ export default function LandingPage() {
                 href="/login"
                 className="w-full sm:w-auto inline-flex justify-center items-center gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 text-base font-bold transition-all shadow-sm shadow-emerald-200 hover:shadow-md hover:shadow-emerald-200/50"
               >
-                İnteraktif Platformu İnceleyin
+                Şimdi Dene
                 <ArrowRight className="h-5 w-5" />
               </Link>
               <a
@@ -732,7 +732,7 @@ export default function LandingPage() {
             href="/login"
             className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 text-lg font-bold transition-all shadow-sm shadow-emerald-200 hover:shadow-md hover:shadow-emerald-200/50"
           >
-            Kurumsal Giriş
+            Şimdi Dene
             <ArrowRight className="h-5 w-5" />
           </Link>
           <p className="mt-6 text-sm text-slate-400">
