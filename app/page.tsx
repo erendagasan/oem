@@ -79,9 +79,9 @@ const featureCards = [
     icon: Zap,
   },
   {
-    title: "Canlı Demo (Sandbox)",
+    title: "Canlı Platform Önizlemesi",
     description:
-      "Örnek ERP verisiyle platformu hiçbir risk almadan deneyimleyin. Gerçek senaryolar üzerinde test edin.",
+      "Örnek ERP verisiyle platformu riske girmeden keşfedin. Gerçek kurumsal senaryolar üzerinde işlevselliği görün.",
     icon: LayoutDashboard,
   },
   {
@@ -169,7 +169,7 @@ export default function LandingPage() {
                 href="/giris"
                 className="w-full sm:w-auto inline-flex justify-center items-center gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 text-base font-bold transition-all shadow-sm shadow-emerald-200 hover:shadow-md hover:shadow-emerald-200/50"
               >
-                İnteraktif Demoyu İncele
+                İnteraktif Platformu İnceleyin
                 <ArrowRight className="h-5 w-5" />
               </Link>
               <a
@@ -354,7 +354,7 @@ export default function LandingPage() {
                 href="/giris"
                 className="inline-flex items-center gap-2 text-sm font-bold text-emerald-400 hover:text-emerald-300 transition-colors"
               >
-                Tam sürümü demo panele giriş yaparak deneyimleyin
+                Tam sürümü panele giriş yaparak deneyimleyin
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
@@ -615,7 +615,7 @@ export default function LandingPage() {
               href="/giris"
               className="inline-flex items-center gap-2 text-sm font-bold text-emerald-600 hover:text-emerald-500 transition-colors"
             >
-              Tam dokümantasyon ve örnek kodlar için demo panele giriş yapın
+              Tam dokümantasyon ve örnek kodlar için panele giriş yapın
               <ExternalLink className="h-4 w-4" />
             </Link>
           </div>
@@ -726,13 +726,13 @@ export default function LandingPage() {
             Tedarik süreçlerinizi dönüştürmeye hazır mısınız?
           </h2>
           <p className="text-xl text-slate-500 mb-10 max-w-2xl mx-auto">
-            OEMHUB&apos;ın gücünü kendi verilerinizle test edin. Demo ortamına giriş yaparak anında keşfetmeye başlayın.
+            OEMHUB&apos;ın gücünü kendi verilerinizle keşfedin. Panele giriş yaparak anında incelemeye başlayın.
           </p>
           <Link
             href="/giris"
             className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 text-lg font-bold transition-all shadow-sm shadow-emerald-200 hover:shadow-md hover:shadow-emerald-200/50"
           >
-            Kurumsal Demoya Giriş Yap
+            Kurumsal Giriş
             <ArrowRight className="h-5 w-5" />
           </Link>
           <p className="mt-6 text-sm text-slate-400">

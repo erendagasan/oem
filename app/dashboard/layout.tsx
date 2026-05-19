@@ -109,7 +109,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
               className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-bold text-amber-700 bg-amber-50 hover:bg-amber-100 rounded-xl transition-colors"
             >
               <RotateCcw className="h-4 w-4" />
-              Demoyu Sıfırla
+              Oturumu Sıfırla
             </button>
             <button
               onClick={() => {
@@ -172,7 +172,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                 className="w-full flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium text-amber-700 bg-amber-50 border border-amber-100 rounded-lg"
               >
                 <RotateCcw className="h-4 w-4" />
-                Demoyu Sıfırla
+                Oturumu Sıfırla
               </button>
               <button
                 onClick={() => {

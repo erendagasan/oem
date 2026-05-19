@@ -124,7 +124,7 @@ export function DemoProvider({ children }: { children: React.ReactNode }) {
     setFeedbackList((prev) => [
       {
         id: `FB-${prev.length + 1}`,
-        author: "Demo Kullanıcısı",
+        author: "Satın Alma Ekibi",
         role: selectedRole,
         priority: "İyileştirme",
         note: clean,

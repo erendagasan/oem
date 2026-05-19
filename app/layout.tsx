@@ -14,8 +14,8 @@ const body = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "OEMHUB Demo",
-  description: "OEM eşleştirme ve maliyet analizini gösteren adım adım demo web uygulaması.",
+  title: "OEMHUB | Kurumsal Tedarik Zekası",
+  description: "OEM eşleştirme ve maliyet analizi platformu. Tedarik zincirinizdeki gizli maliyetleri görünür kılın.",
 };
 
 export default function RootLayout({

@@ -80,7 +80,7 @@ export default function SupportCenterView() {
               </div>
               <div>
                 <h3 className="text-base font-bold text-slate-900">Canlı Çözüm Botu</h3>
-                <p className="text-xs text-slate-500">Demo amaçlı akıllı yanıt akışı</p>
+                <p className="text-xs text-slate-500">Yapay zeka destekli akıllı yanıt akışı</p>
               </div>
             </div>
 

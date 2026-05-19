@@ -391,7 +391,7 @@ export const packagePlans = [
     usageLimit: "1 defaya mahsus tek operasyon",
     dataUpload: "Sınırlı ön izleme",
     hardwareTracking: "Yok",
-    extraModules: "Sadece demo",
+    extraModules: "Sınırlı ön izleme",
   },
   {
     id: "premium",
@@ -945,7 +945,7 @@ export const supportBotIntents = [
   {
     id: "sales-routing",
     label: "Satış ekibine yönlendirme",
-    keywords: ["teklif", "satış", "demo", "iletişim", "kurumsal"],
+    keywords: ["teklif", "satış", "fiyat", "iletişim", "kurumsal"],
     reply:
       "Talebinizi satış ekibine iletebilirim. Kısa bir keşif görüşmesi için şirket adı, kullanıcı sayısı ve hedeflenen entegrasyonu paylaşmanız yeterli.",
   },

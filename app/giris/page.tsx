@@ -56,17 +56,17 @@ export default function LoginPage() {
           </span>
 
           <h1 className="mt-4 text-3xl font-black text-slate-900 leading-tight">
-            Demo hesabınızla<br /> platforma bağlanın
+            Hesabınızla<br /> platforma bağlanın
           </h1>
           <p className="mt-3 text-sm text-slate-500 leading-relaxed max-w-md">
-            OEMHUB paneline erişmek için aşağıdaki demo bilgilerini kullanın.
+            OEMHUB paneline erişmek için aşağıdaki giriş bilgilerini kullanın.
             Gerçek bir kurumsal entegrasyon deneyimi için tasarlanmıştır.
           </p>
 
           <div className="mt-8 rounded-xl border border-slate-200 bg-white p-5 shadow-sm space-y-3">
             <div className="flex items-center gap-2 text-emerald-700">
               <ShieldCheck className="h-4 w-4" />
-              <p className="text-xs font-bold uppercase tracking-wider">Demo Hesap Bilgileri</p>
+              <p className="text-xs font-bold uppercase tracking-wider">Hesap Bilgileri</p>
             </div>
             <div className="space-y-1.5">
               <div className="flex items-center gap-2">
@@ -96,7 +96,7 @@ export default function LoginPage() {
         <section className="p-8 lg:p-10 bg-white">
           <div className="flex flex-col h-full justify-center max-w-sm mx-auto w-full">
             <h2 className="text-2xl font-bold text-slate-900">Giriş yapın</h2>
-            <p className="text-sm text-slate-500 mt-1">Demo panele erişmek için kimlik bilgilerinizi girin.</p>
+            <p className="text-sm text-slate-500 mt-1">Panele erişmek için kimlik bilgilerinizi girin.</p>
 
             <form onSubmit={handleSubmit} className="mt-8 space-y-5">
               <label className="block">
@@ -140,7 +140,7 @@ export default function LoginPage() {
             </form>
 
             <p className="mt-8 text-xs text-slate-400 text-center leading-relaxed">
-              Bu bir demo sürümüdür. Gerçek kurumsal kullanım için
+              Kurumsal kullanım ve entegrasyon için
               <br />satış ekibimizle iletişime geçin.
             </p>
           </div>
