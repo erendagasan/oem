@@ -354,7 +354,7 @@ export default function LandingPage() {
                 href="/login"
                 className="inline-flex items-center gap-2 text-sm font-bold text-emerald-400 hover:text-emerald-300 transition-colors"
               >
-                Tam sürümü panele giriş yaparak deneyimleyin
+                Şimdi Dene
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
@@ -615,7 +615,7 @@ export default function LandingPage() {
               href="/login"
               className="inline-flex items-center gap-2 text-sm font-bold text-emerald-600 hover:text-emerald-500 transition-colors"
             >
-              Tam dokümantasyon ve örnek kodlar için panele giriş yapın
+              Şimdi Dene
               <ExternalLink className="h-4 w-4" />
             </Link>
           </div>
