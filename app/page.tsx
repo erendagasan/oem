@@ -125,14 +125,11 @@ export default function LandingPage() {
             </span>
           </Link>
           <div className="flex items-center gap-2 sm:gap-4">
-            <Link href="/giris" className="hidden sm:inline text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
-              Müşteri Girişi
-            </Link>
             <Link
               href="/giris"
               className="inline-flex items-center gap-1.5 sm:gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold transition-all shadow-sm shadow-emerald-200 whitespace-nowrap"
             >
-              Demoyu Başlat
+              Müşteri Girişi
             </Link>
           </div>
         </div>
